@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkFromHomeHub - Opportunities for Students & Freshers</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+
+<body>
+    <header>
+        <h1>WorkFromHomeHub</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#jobs">Jobs</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Transform Your Life with Work-from-Home Opportunities</h2>
+        <p>Perfect for students and freshers. Build skills, earn remotely, and make better decisions for your future.
+        </p>
+        <button onclick="scrollToJobs()">Explore Jobs</button>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We connect talented students and freshers with flexible, remote jobs. Gain experience, balance studies, and
+            pave the way for a brighter career.</p>
+    </section>
+
+    <section id="jobs">
+        <h2>Available Opportunities</h2>
+        <div id="job-list"></div>
+    </section>
+
+    <section id="testimonials">
+        <h2>What Our Hires Say</h2>
+        <div class="testimonial">
+            <p>"This job helped me fund my studies while learning new skills!" - Alex, Student</p>
+        </div>
+        <div class="testimonial">
+            <p>"As a fresher, I got real-world experience remotely. Life-changing!" - Jordan, Fresher</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Apply Now</h2>
+        <form id="application-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Why you're interested..." required></textarea>
+            <button type="submit">Submit Application</button>
+        </form>
+        <div id="response"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 WorkFromHomeHub. Empowering futures.</p>
+    </footer>
+
+    <script src="new.js"></script>
+</body>
+
+</html>
