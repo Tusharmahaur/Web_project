@@ -1,0 +1,29 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    font-size: 30px;
+}
+
+/* div:hover{
+    background-color: rgb(1, 255, 170);
+    color:white;
+}
+
+div:active{
+    background-color: yellow;
+    color:black;
+}
+div:focus-within{
+    background-color: rgb(151, 33, 151);
+    color: rgb(255, 155, 255);
+} */
+
+@keyframes colorAnimate{
+    from{
+        background-color: rgb(255, 1, 1);
+        
+    }to {
+        background-color: black;
+    }
+}

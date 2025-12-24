@@ -1,0 +1,17 @@
+div{
+    
+    height: 200px;
+    width:200px;
+    background-image: url("image.png");
+    background-size: cover;
+    position : static;
+    margin-left:none;
+    color :white;
+    font-size: 20px;
+}
+
+body{
+    text-align:center;
+    position : sticky;
+}
+

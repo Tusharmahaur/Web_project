@@ -1,0 +1,73 @@
+*{
+    background-color: black;
+}
+
+
+h1{
+   color:white;
+
+}
+
+.simple{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width:200px;
+    border-radius:20%;
+    background-color:rgb(125, 119, 149);
+    margin:20px 20px 20px 20px;
+}
+
+.creative{
+    height: 200px;
+    width:200px;
+    border-radius:20%;
+    background-color:rgb(125, 119, 149);
+    margin:20px 20px 20px 20px;
+}
+
+.Advanced{
+    
+    height: 200px;
+    width:500px;
+    border-radius:10%;
+    background-color:rgb(125, 119, 149);
+    margin:20px 20px 20px 20px;
+}
+
+#simple{
+    
+    height:50%;
+    width:50%;
+    border-radius:75%;
+    background-color:rgb(125, 119, 149) ;
+    border-top:5px solid yellow;
+    animation: simpleAnimation 3s ease-in 0.1ms infinite normal;
+}
+
+#simpleInner{
+    height:50%;
+    width:50%;
+    border-radius:75%;
+    background-color:rgb(125, 119, 149) ;
+    border-bottom:5px solid rgb(255, 0, 0);
+    animation: simpleAni 3s ease-in-out 0.1ms infinite normal;
+}
+
+/* 
+@keyframes simpleAnimation{
+    from{
+        transform : rotate(0deg);
+    }to{
+        transform : rotate(360deg);
+    }
+}
+
+@keyframes simpleAni{
+    from{
+        transform : rotate(360deg);
+    }to{
+        transform : rotate(0deg);
+    }
+} */
