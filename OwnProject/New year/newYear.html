@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="newYear.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input type="number" min="0" step="5" />
+    </div>
+
+    <div class="button">
+      <input class="styled" type="button" value="Add to favorites" />
+    </div>
+
+    <div class="checkbox">
+      <fieldset>
+        <legend>Choose your monster's features:</legend>
+
+        <div>
+          <input type="checkbox" id="scales" name="scales" checked />
+          <label for="scales">Scales</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="horns" name="horns" />
+          <label for="horns">Horns</label>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="colorInput">
+      <p>Choose your colors:</p>
+
+      <div>
+        <input type="color" id="foreground" name="foreground" value="#e66465" />
+        <label for="foreground">Foreground color</label>
+      </div>
+
+      <div>
+        <input
+          type="color"
+          id="background"
+          name="background"
+          value="oklab(50% 0.1 0.1 / 0.5)"
+          colorspace="display-p3"
+          alpha />
+        <label for="background">Background color</label>
+      </div>
+    </div>
+    <div class="date">
+      <label for="start">Start date:</label>
+
+      <input
+        type="date"
+        id="start"
+        name="trip-start"
+        value="2018-07-22"
+        min="2018-01-01"
+        max="2045-12-31" />
+    </div>
+    <div class="localDateTime">
+      <label for="meeting-time">Choose a time for your appointment:</label>
+
+      <input
+        type="datetime-local"
+        id="meeting-time"
+        name="meeting-time"
+        value="2018-06-12T19:30"
+        min="2018-06-07T00:00"
+        max="2018-06-14T00:00" />
+    </div>
+    <div class="forFile">
+      <label for="avatar">Choose a profile picture:</label>
+
+      <input
+        type="file"
+        id="avatar"
+        name="avatar"
+        accept="image/png, image/jpeg" />
+    </div>
+    <div class="email">
+      <label for="email">Enter your example.com email:</label>
+
+      <input
+        type="email"
+        id="email"
+        pattern=".+@example\.com"
+        size="30"
+        required />
+    </div>
+    <div class="image">
+      <p>Sign in to your account:</p>
+
+      <div>
+        <label for="userId">User ID</label>
+        <input type="text" id="userId" name="userId" />
+      </div>
+
+      <input
+        type="image"
+        id="image"
+        alt="Login"
+        src="/shared-assets/images/examples/login-button.png" />
+    </div>
+    <div class="month">
+      <label for="start">Start month:</label>
+
+      <input
+        type="month"
+        id="start"
+        name="start"
+        min="2018-03"
+        value="2018-05" />
+    </div>
+    <div class="number">
+      <label for="tentacles">Number of tentacles (10-100):</label>
+
+      <input type="number" id="tentacles" name="tentacles" min="10" max="100" />
+    </div>
+    <div class="range">
+      <p>Audio settings:</p>
+
+      <div>
+        <input type="range" id="volume" name="volume" min="0" max="11" />
+        <label for="volume">Volume</label>
+      </div>
+
+      <div>
+        <input
+          type="range"
+          id="cowbell"
+          name="cowbell"
+          min="0"
+          max="100"
+          value="90"
+          step="10" />
+        <label for="cowbell">Cowbell</label>
+      </div>
+    </div>
+    <div class="reset"><form>
+  <div class="controls">
+    <label for="id">User ID:</label>
+    <input type="text" id="id" name="id" />
+
+    <input type="reset" value="Reset" />
+    <input type="submit" value="Submit" />
+  </div>
+</form></div>
+
+<div class="search"><label for="site-search">Search the site:</label>
+<input type="search" id="site-search" name="q" />
+
+<button>Search</button>
+</div>
+
+<div class="telephone_number"><label for="phone">
+  Enter your phone number:<br />
+  <small>Format: 123-456-7890</small>
+</label>
+
+<input
+  type="tel"
+  id="phone"
+  name="phone"
+  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+  required />
+</div>
+
+<div class="text"><label for="name">Name (4 to 8 characters):</label>
+
+<input
+  type="text"
+  id="name"
+  name="name"
+  required
+  minlength="4"
+  maxlength="8"
+  size="10" /></div>
+
+  <div class="time">
+    <label for="appointment">Choose a time for your meeting:</label>
+
+<input
+  type="time"
+  id="appointment"
+  name="appointment"
+  min="09:00"
+  max="18:00"
+  required />
+
+<small>Office hours are 9am to 6pm</small>
+  </div>
+
+  <div class="week"><label for="appointment">Choose a time for your meeting:</label>
+
+<input
+  type="time"
+  id="appointment"
+  name="appointment"
+  min="09:00"
+  max="18:00"
+  required />
+
+<small>Office hours are 9am to 6pm</small></div>
+  </body>
+</html>

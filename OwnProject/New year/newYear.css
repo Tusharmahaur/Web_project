@@ -1,0 +1,81 @@
+body{
+    padding: 0;
+    display: flex;
+    flex-direction:row;
+  align-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height:100vh;
+
+}
+
+.container{
+   
+    height: 200px;
+    width: 200px;
+    /* background-color: rgb(255, 255, 3); */
+    background-image: linear-gradient(
+        to left,
+        rgb(0 0 0/50%),
+        rgb(0 0 0/50%)30%,
+          transparent
+        );
+}
+.styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  border-radius: 10px;
+  background-color: tomato;
+  background-image: linear-gradient(
+    to top left,
+    rgb(0 0 0 / 20%),
+    rgb(0 0 0 / 20%) 30%,
+    transparent
+  );
+  box-shadow:
+    inset 2px 2px 3px rgb(255 255 255 / 60%),
+    inset -2px -2px 3px rgb(0 0 0 / 60%);
+}
+
+.styled:hover {
+  background-color: red;
+}
+
+.styled:active {
+  box-shadow:
+    inset -2px -2px 3px rgb(255 255 255 / 60%),
+    inset 2px 2px 3px rgb(0 0 0 / 60%);
+}
+
+/*checkbox*/p,
+label {
+  font:
+    1rem "Fira Sans",
+    sans-serif;
+}
+
+input {
+  margin: 0.4rem;
+}
+
+
+/* for color */
+p,
+label {
+  font:
+    1rem "Fira Sans",
+    sans-serif;
+}
+
+input {
+  margin: 0.4rem;
+}
+
+div{
+    margin: 30px;
+}
