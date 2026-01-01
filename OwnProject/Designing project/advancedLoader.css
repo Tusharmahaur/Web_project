@@ -1,0 +1,65 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #201f1f;
+}
+
+
+.box{
+    height:200px;
+    background-color: #201f1f;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+@property --deg{
+    syntax: '<angle>';
+    inherits:true;
+    initial-value: 0deg;
+}
+
+.box::before,
+.box::after{
+    content: "";
+    position:absolute;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    background:conic-gradient(
+        from var(--deg) at center,
+        rgb(255, 0, 0),
+        rgb(238, 255, 0),
+        rgb(0, 255, 26),
+        rgb(0, 255, 251),
+        rgb(13, 0, 255),
+        rgb(93, 0, 255),
+        rgb(234, 0, 255),
+        rgb(255, 0, 123),
+        rgb(255, 0, 0)
+    );
+    padding: 2px;
+    border-radius:inherit;
+   
+    animation: autoRotate 2s linear infinite;
+}
+
+.box::after{
+    z-index: -1;
+    filter:blur(10px);
+}
+
+@keyframes  autoRotate {
+    to{
+        --deg:360deg;
+    }
+}

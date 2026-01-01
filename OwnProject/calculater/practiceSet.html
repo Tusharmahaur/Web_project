@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practiceSet</title>
+</head>
+<body>
+    <h1 id="display"    ></h1>
+
+
+    <script>
+        const myName = 'Prashant';
+        console.log(myName);
+        document.querySelector('#display').innerText = myName;
+        
+        let cartValue = `₹`+ Math.round(((15599 -(0.1*15599))-272+(2499-(0.41*2499))-29+25+20)*(1.18)) ;
+        document.querySelector('#display').innerText = "Your cart value is  = "+cartValue;
+    </script>
+</body>
+</html>

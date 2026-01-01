@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.circle{
+    height: 100px;
+    width: 100px;
+    background-color: darkslategray;
+    border-radius: 50%;
+}

@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+ 
+    background:conic-gradient(
+        from 0deg at center,
+        #ff0000,
+        #ffbb00,
+        #d9ff00,
+        #00ff0d,
+        #00f7ff,
+        #00ccff,
+        #00aaff,
+        #0400ff,
+        #a200ff,
+        #ff00dd,
+        #ff0048     
+    );
+}
+.box1{
+    height: 200px;
+    width: 200px;
+    
+    background-color: #14958a;
+    background:conic-gradient(
+        from 0deg at center,
+        #951414,
+        #14958a,
+        #829514,
+    )
+
+}

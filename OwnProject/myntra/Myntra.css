@@ -1,93 +1,182 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: assistant, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
 }
 /*For navbar */
 nav{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height:15vh;
-    border:1px solid black;
+    border-bottom:0.3em solid #f3f1f8;    
 }
 
-nav img{
+
+
+nav search{
     display:flex;
+    align-items: center;
+    background-color: #f5f5f6;
+    min-width: 200px;
+    width:30.33%;
+    height: 30%;
+    color:#696e79;
+    border:1.2px solid #696e89;
+    border-radius: 4px 4px 4px 4px;
+}
+
+nav span{
+    margin: .2em;
+}
+
+nav input{
+    color:#696e79;
+    width:100%;
+    border: none;
+    
+}
+nav img{
     height:3em ;
-
-}
-
-
-nav a{
-    text-transform: uppercase;
-    text-decoration: none;
-    color:black;
-    font-weight:bolder;
-
-}
+   }
 
 a sup{
     font-size: 50%;
     color:#ff3f6c; 
 }
 
+/*for text_navBar anchor tag*/
+/*Container ke liye*/
+.nav_icon{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    height: 10%;
+    width: 10%;
+    margin-right:5%;
+}
+
+/*indivisual items ke liye*/
+.text_navBar a{
+    
+    text-transform: uppercase;
+    text-decoration: none;
+    color:black;
+    font-weight:bolder;
+    font-size:0.8em;
+    padding: 0 12px 28px;
+    
+}
+
+.text_navBar a:hover{
+    border-bottom: 2px solid #f54e77;
+}
+
+.nav_icon a{   
+    text-decoration: none;
+    color:black;
+    font-size:15px;
+    
+}
+
+
+
+
 
 /*for main section*/
+.banner_container img{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin : 5% 0 ;
+    min-width: 40%;    
+}
+
+
+.catagory_heading{
+    display: flex;
+    justify-content: center;
+    text-transform:uppercase;
+    color:#3e4152;
+    letter-spacing: 0.15em;
+    font-size: 1.8em;
+    margin: 50px 0 10px 30px;
+    max-height: 5em;
+    font-weight: 700;
+}
+
+.catagory_item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+.catagory_item a{
+    display: flex;
+    
+    justify-content:space-between;
+    width: 100%;
+    height: 100%;
+    
+}
+
+/*for indivisul items ke liye*/
+
+.catagory_item img{
+    margin-top:20%;
+    margin-left:10%;
+    width:90%;
+}
+
+/*for container*/
+
+.bollywood_catagory_item{
+    display: flex;
+}
+.bollywood_catagory_item a{
+    
+    padding-top: 4.3%;
+    height: 10%;
+    
+}
+
+.shop_by_catagory {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.shop_by_catagory a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+/*for individual div ke liye*/
+.bollywood_catagory_item img{
+    width: 100%;
+    height: 30%;
+    border:0.05em solid white
+}
+
+.shop_by_catagory img{
+    display:flex;
+    width:13em;
+    height:17em;
+    flex-grow: inherit;
+    
+}
+
+
 
 
 
 /*For footer */
 
-/*Media querry for responsiveness */
-@media screen  and (max-width:400px) and (min-width:0px) {
-    nav{
-        height:1.7em;
-        
-        
-    }
-    nav input{
-        width: 4em;
-        height: 0.3em;
 
-    }
-    nav a{
-        font-size:0.18em;
-        
-    }
-}
 
-@media screen and (max-width:600px) and (min-width:400px){
-     nav{
-        height:2.5em;
-        
-        
-    }
-    nav input{
-        width: 6em;
-        height: 0.4em;
-
-    }
-    nav a{
-        font-size:0.3em;
-        
-    }
-
-}
-
-@media screen  and (min-width:600px) and (max-width:900px){
-    nav{
-        height:4.5em;
-        /* background-color: #ff3f6c; */
-        
-    }
-    nav input{
-        width: 8em;
-        height: 0.5em;
-       
-    }
-    
-    nav a{
-        font-size:0.7em;
-        
-    }
-}
